@@ -17,10 +17,11 @@ const Screen = () => {
       }
     ))
   }
+  
   return (
     <View>
       <Text style={{ fontSize: 30 }}>Screen: {appState.count}</Text>
-      <Button title='Tăng' onPress={() => dispatch(tang(1))} />
+      <Button title='Tăng' onPress={ () => dispatch(tang(1))} />
       <Button title='Thêm' onPress={add} />
       {
         appState.cart.map((item) => {

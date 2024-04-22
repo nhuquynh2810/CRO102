@@ -2,8 +2,8 @@ import axios from 'axios';
 
 const AxiosInstance = (contentType = 'application/json') => {
     const axiosInstance = axios.create({
-        baseURL: 'http://172.16.79.164:7777/'
-        // baseURL: 'http://172.16.65.182:7777/'
+        baseURL: 'http://192.168.1.39:7777/'
+        // baseURL: 'http:// 172.16.78.173:7777/'
     });
     // cmd -----> ipconfig -----> IPv4 Address (192.168.1.1)
     axiosInstance.interceptors.request.use(
